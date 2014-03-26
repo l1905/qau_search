@@ -1,0 +1,33 @@
+DEBUG:MAIN-SPIDER::<200 http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/>
+DEBUG:MAIN-SPIDER::<200 http://www.dmoz.org/Computers/Programming/Languages/Python/Books/>
+DEBUG:MAIN-SPIDER::<200 http://www.dmoz.org/Computers/Programming/Languages/Python/Books/>
+DEBUG:MAIN-SPIDER::<200 http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/>
+DEBUG:MAIN-SPIDER:<200 http://www.dmoz.org/Computers/Programming/Languages/Python/Books/>
+DEBUG:MAIN-SPIDER:<200 http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/>
+DEBUG:MAIN-SPIDER:http://www.dmoz.org/Computers/Programming/Languages/Python/Books/
+DEBUG:MAIN-SPIDER:http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/
+DEBUG:MAIN-SPIDER:{'Cteonnt-Length': ['33202'], 'Content-Language': ['en'], 'Set-Cookie': ['JSESSIONID=6B3D239B74FFC1BE472DEC0DA5E8DBF8; Path=/'], 'Server': ['Apache'], 'Date': ['Wed, 26 Mar 2014 09:44:50 GMT'], 'Content-Type': ['text/html;charset=UTF-8']}
+DEBUG:MAIN-SPIDER:{'Cteonnt-Length': ['16565'], 'Content-Language': ['en'], 'Set-Cookie': ['JSESSIONID=A52CC72857A771E71B117581F58052F3; Path=/'], 'Server': ['Apache'], 'Date': ['Wed, 26 Mar 2014 09:44:57 GMT'], 'Content-Type': ['text/html;charset=UTF-8']}
+DEBUG:MAIN-SPIDER:{'X-Aspnet-Version': ['2.0.50727'], 'X-Powered-By': ['ASP.NET'], 'Expires': ['-1'], 'Server': ['Microsoft-IIS/6.0'], 'Pragma': ['no-cache'], 'Cache-Control': ['no-cache'], 'Date': ['Wed, 26 Mar 2014 09:47:00 GMT'], 'Content-Type': ['text/html; charset=gb2312']}
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/n24453c8.aspx
+DEBUG:MAIN-SPIDER:{'X-Aspnet-Version': ['2.0.50727'], 'X-Powered-By': ['ASP.NET'], 'Expires': ['-1'], 'Server': ['Microsoft-IIS/6.0'], 'Pragma': ['no-cache'], 'Cache-Control': ['no-cache'], 'Date': ['Wed, 26 Mar 2014 10:14:26 GMT'], 'Content-Type': ['text/html; charset=gb2312']}
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/n24453c8.aspx
+DEBUG:MAIN-SPIDER:{'X-Aspnet-Version': ['2.0.50727'], 'X-Powered-By': ['ASP.NET'], 'Expires': ['-1'], 'Server': ['Microsoft-IIS/6.0'], 'Pragma': ['no-cache'], 'Cache-Control': ['no-cache'], 'Date': ['Wed, 26 Mar 2014 10:16:26 GMT'], 'Content-Type': ['text/html; charset=gb2312']}
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/n24453c8.aspx
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/n24453c8.aspx
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn
+DEBUG:MAIN-SPIDER:sites is []
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/
+DEBUG:MAIN-SPIDER:sites is []
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/
+DEBUG:MAIN-SPIDER:sites is []
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/
+DEBUG:MAIN-SPIDER:sel is <Selector xpath=None data=u'<html xmlns="http://www.w3.org/1999/xhtm'>
+DEBUG:MAIN-SPIDER:sites is []
+DEBUG:MAIN-SPIDER:http://news.qau.edu.cn/
+DEBUG:MAIN-SPIDER:sel is <Selector xpath=None data=u'<html xmlns="http://www.w3.org/1999/xhtm'>
+DEBUG:MAIN-SPIDER:sites is [<Selector xpath='//title' data=u'<title>\u9752\u5c9b\u519c\u5927\u5728\u7ebf \u9752\u5c9b\u519c\u4e1a\u5927\u5b66\u65b0\u95fb\u7f51 News.qau.edu.cn<'>]
+DEBUG:MAIN-SPIDER:title is [], link is []
