@@ -10,6 +10,8 @@ class MegaSpiderItem(Item):
     # name = Field()
     # pass
     title = Field()
-    link = Field()
+    # link = Field()
+    web_urls = Field()
+    content = Field()
     # desc = Field()
     
