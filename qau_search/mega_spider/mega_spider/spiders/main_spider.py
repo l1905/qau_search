@@ -19,9 +19,9 @@ class DmoSpider(Spider):
     # start_urls = [
     #     "http://www.qau.edu.cn/"
     # ]
-    allowed_domains = ['qust.edu.cn']
+    allowed_domains = ['qau.edu.cn']
     start_urls = [
-        "http://www.qust.edu.cn/"
+        "http://www.qau.edu.cn/"
     ]
 
     def parse(self, response):
