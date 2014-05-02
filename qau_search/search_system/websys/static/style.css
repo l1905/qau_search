@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+}
+#baidu {
+	/*margin: 800px;*/
+	/*padding-left: 30px; 
+	height: 22px;
+	width: 405px;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: arial;
+	margin: 5px 0 0 7px;*/
+
+	background: none repeat scroll 0 0 #FFFFFF;
+    font: 16px/22px arial;
+    height: 22px;
+    margin: 5px 0 0 7px;
+    outline: medium none;
+    width: 405px;
+}
+.tb {
+	/*margin: 800px,100px,200px,200px;*/
+	/*padding: 270px;*/
+	/*text-align: left;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: 200px;
+	margin-left: -300px;
+	margin-top: -100px
+}
+#logo {
+	text-align: center;
+}

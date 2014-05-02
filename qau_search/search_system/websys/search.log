@@ -1,0 +1,180 @@
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:21:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:21:49] "GET /static/style.css HTTP/1.1" 200 -
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:21:52] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:46:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:46:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:46:13] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:46:16] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:47:30] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:47:34] "GET / HTTP/1.1" 200 -
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:47:38] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:48:14] "GET / HTTP/1.1" 200 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:dumping model to file cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 12.0091879368 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:49:29] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:51:23] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:51:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:51:26] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:STATISTIC:hello world
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:51:30] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:53:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:53:05] "GET /static/style.css HTTP/1.1" 304 -
+ERROR:__main__:Exception on /result [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "search.py", line 29, in search
+    idex.get_index_info(first_name)
+NameError: global name 'idex' is not defined
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:53:13] "POST /result HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:54:44] "GET / HTTP/1.1" 200 -
+ERROR:__main__:Exception on /result [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "search.py", line 29, in search
+    idex.get_index_info(first_name)
+NameError: global name 'idex' is not defined
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:54:53] "POST /result HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:55:40] "GET / HTTP/1.1" 200 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 2.1601369381 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:青岛农业大学校庆网
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:55:49] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:59:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:59:34] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 1.31027913094 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:[{'url': u'http://xq.qau.edu.cn/', 'content': u'\u76f4\u64ad\uff1a\u5e86\u795d<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u5efa\u682160\u5468\u5e74\u5927\u4f1a(12-06)<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b6660\u5468\u5e74\u6821\u5e86\u665a\u4f1a...<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6ee8\u5dde\u6821\u53cb\u4f1a\u6b63\u5f0f\u6210\u7acb\u8bc4\u8bba\uff1a\u8fc8\u4e0a\u65b0\u5f81\u7a0b \u518d\u521b\u65b0\u8f89\u714c<b class="match term0">\u9752\u5c9b</b>\u519c\u592760\u5468\u5e74\u6821\u5e86\u665a\u4f1a\u7cbe\u5f69\u56fe\u7247...<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6982\u51b5\u6821\u8bad \u6821\u98ce\u5b66\u6821\u7cbe\u795e\u94fe\u63a5\uff1a<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u65b0\u95fb\u7f51<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6821\u53cb\u7f51\u672c\u4e13\u79d1', 'title': u'\u9752\u5c9b\u519c\u4e1a\u5927\u5b66\u6821\u5e86\u7f51'}, {'url': u'http://news.qau.edu.cn/c32.aspx', 'content': u'\u53c8\u6380\u6821\u56ed\u521b\u4e1a\u70ed\u60c504-21\u4e2d\u56fd\u9752\u5e74\u7f51\uff1a<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u5e08\u751f\u53c2\u52a0<b class="match term0">\u9752\u5c9b</b>\u5e02\u4e49\u52a1\u690d\u202604-21\u817e\u8baf\u7f51\uff1a\u817e\u8baf\u5fae\u535a...\u7389\u6811\u5b69\u202604-04\u817e\u8baf\u7f51\uff1a\u7b2c\u5341\u4e8c\u5c4a\u5b66\u9662\u5956<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u7ad9\u5de1\u8bb204-04<b class="match term0">\u9752\u5c9b</b>\u65e5\u62a5\uff1a\u519c\u5927\u5b66\u751f\u4e24\u5e74\u62cd\u4e8620\u90e8\u5fae\u7535\u5f71...\u4e0e\u6797\u5b66\u9662\u4e3e\u884c\u5927\u5b66\u751f\u521b\u65b0\u9879\u76ee\u7ed3\u9898\u9a8c\u6536\u6c47\u62a5\u4f1a<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u8363\u83b7<b class="match term0">\u9752\u5c9b</b>\u5e02\u5f81\u5175\u5de5\u4f5c\u5148\u8fdb\u5355\u4f4d\u6770\u51fa\u6821\u53cb\u683e\u5347\u56de\u6bcd\u6821', 'title': u'\u5a92\u4f53'}, {'url': u'http://news.qau.edu.cn/', 'content': u'\u9752\u5e74\u548c\u4ed6\u4eec\u7684\u65b0\u5a92\u4f53\u5de5\u4f5c\u5ba4\u6728\u6709\u624b\u673a\u7684\u65e5\u5b50\u2014\u2014<b class="match term0">\u9752\u5c9b</b>\u519c\u5927Solomo\u65b0\u5a92\u4f53\u2026<b class="match term0">\u9752\u5c9b</b>\u7535\u89c6\u53f0\uff1a\u201c\u519c\u201d\u5b57\u53f7\u5927\u5b66\u91cc\u7684\u52a8\u753b\u660e\u661f\u2026<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u6d3e\u9a7b\u5c71\u4ead\u533a\u5f90\u5e84\u9547\u7b2c\u4e00\u4e66\u8bb0...\u53ca\u9632\u63a7\u5173\u952e\u6280\u672f\u7684\u5f15\u8fdb\u201d\u901a\u8fc7\u4e13\u5bb6\u9a8c\u6536[\u5168\u6587]<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u4e0e<b class="match term0">\u9752\u5c9b</b>\u65e5\u62a5\u5171\u5efa\u7f51\u4e0a\u5b9e\u4e60\u57fa\u5730<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u4e0e<b class="match term0">\u9752\u5c9b</b>\u65e5\u62a5\u5408\u4f5c\u5171\u5efa\u7684\u7f51\u4e0a\u5927\u5b66\u751f\u5b9e\u4e60\u57fa\u5730...\u5956\u52b1\u518d\u83b7\u4e30\u6536\u97e9\u56fd\u5168\u5357\u56fd\u7acb\u5927\u5b66\u6559\u6388\u6765<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u4f5c\u5b66\u672f\u4ea4\u6d41<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u8363\u83b7<b class="match term0">\u9752\u5c9b</b>\u5e02\u5f81\u5175\u5de5\u4f5c\u5148\u8fdb\u5355\u4f4d\u5229\u6d25\u8003\u5bdf\u56e2', 'title': u'\u9752\u5c9b\u519c\u5927\u5728\u7ebf \u9752\u5c9b\u519c\u4e1a\u5927\u5b66\u65b0\u95fb\u7f51 News.qau.edu.cn'}, {'url': u'http://news.qau.edu.cn/n25428c1.aspx', 'content': u'<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u7b2c37\u5c4a\u7530\u5f84\u8fd0\u52a8\u4f1a\u7cbe\u5f69\u56fe\u72471347<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6821\u56ed\u98ce\u666f559\u4e1c\u8425...\u4f5c\u54c1\u5c55\uff08\u4e00\uff09252\u897f\u5357\u79d1\u6280\u5927\u5b66\u4e13\u5bb6\u6559\u6388\u6765<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u8c03\u7814250<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6210\u7acb\u5168\u56fd\u9996\u4e2a\u5927\u5b66...\u91cd\u70b9\u4e13\u4e1a\u5efa\u8bbe\u65b9\u6848\u8bba\u8bc1\u4f1a\u2026242\u8d3e\u4e50\u82b3\u5f53\u9009<b class="match term0">\u9752\u5c9b</b>\u5e02\u54f2\u5b66\u5b66\u4f1a\u526f\u4f1a\u957f239<b class="match term0">\u9752\u5c9b</b>\u519c\u59274\u4ef6\u4f5c\u54c1\u83b7\u5168\u56fd\u9ad8\u6821\u63d2\u56fe\u4f5c\u54c1\u5c55\u6700\u9ad8', 'title': u'\u9752\u5c9b\u5e02\u53d1\u6539\u59d4\u526f\u4e3b\u4efb\u674e\u632f\u519b\u4e00\u884c\u6765\u9752\u5c9b\u519c\u5927\u8003\u5bdf\u8c03\u7814_\u526f\u6821\u957f\u5b8b\u5e0c\u4e91\u4f1a\u89c1\u6765\u8bbf\u5ba2\u4eba'}, {'url': u'http://news.qau.edu.cn/n25142c21.aspx', 'content': u'\u5728<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u4e3e\u529e\u30024\u67083\u65e5\uff0c<b class="match term0">\u9752\u5c9b</b>\u5e02\u9ad8\u6821\u5de5\u59d4\u5728<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u7ec4\u7ec7\u53ec\u5f00\u8fd0\u52a8\u4f1a\u6bd4\u8d5b\u9879\u76ee...\u7ec4\u7ec7\u5de5\u4f5c\u534f\u8c03\u4f1a\uff0c\u4e86\u89e3\u8fd0\u52a8\u4f1a\u7b79\u5907\u60c5\u51b5\u3002<b class="match term0">\u9752\u5c9b</b>\u5e02\u9ad8\u6821\u5de5\u59d4\u601d\u653f\u5904\u3001<b class="match term0">\u9752\u5c9b</b>\u79d1\u6280\u5927\u5b66\u3001<b class="match term0">\u9752\u5c9b</b>\u7406\u5de5\u5927\u5b66\u3001<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u7b49\u5355\u4f4d\u7684\u4f53\u80b2\u5de5\u4f5c\u8d1f\u8d23...\u8fd8\u5bf9\u5b66\u6821\u4f53\u80b2\u573a\u9986\u8bbe\u65bd\u60c5\u51b5\u8fdb\u884c\u4e86\u73b0\u573a\u8003\u5bdf\u3002<b class="match term0">\u9752\u5c9b</b>\u5e02\u9ad8\u6821\u7530\u5f84\u8fd0\u52a8\u4f1a\u7531\u4e2d\u5171<b class="match term0">\u9752\u5c9b</b>\u5e02\u59d4\u9ad8\u7b49\u5b66\u6821\u5de5\u4f5c\u59d4\u5458\u4f1a\u3001<b class="match term0">\u9752\u5c9b</b>\u5e02\u6559\u80b2\u5c40\u3001<b class="match term0">\u9752\u5c9b</b>\u5e02\u4f53\u80b2\u5c40\u3001<b class="match term0">\u9752\u5c9b</b>\u5e02\u9ad8\u7b49\u6559\u80b2\u7814\u7a76\u4f1a\u9ad8\u6821', 'title': u'\u9752\u5c9b\u5e02\u9ad8\u6821\u7530\u5f84\u8fd0\u52a8\u4f1a\u7b79\u5907\u4f1a\u8bae\u5728\u9752\u5c9b\u519c\u5927\u53ec\u5f00'}, {'url': u'http://news.qau.edu.cn/', 'content': u'\u9752\u5e74\u548c\u4ed6\u4eec\u7684\u65b0\u5a92\u4f53\u5de5\u4f5c\u5ba4\u6728\u6709\u624b\u673a\u7684\u65e5\u5b50\u2014\u2014<b class="match term0">\u9752\u5c9b</b>\u519c\u5927Solomo\u65b0\u5a92\u4f53\u2026<b class="match term0">\u9752\u5c9b</b>\u7535\u89c6\u53f0\uff1a\u201c\u519c\u201d\u5b57\u53f7\u5927\u5b66\u91cc\u7684\u52a8\u753b\u660e\u661f\u2026<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u6d3e\u9a7b\u5c71\u4ead\u533a\u5f90\u5e84\u9547\u7b2c\u4e00\u4e66\u8bb0...\u4fee\u8ba2\u53d6\u5f97\u9636\u6bb5\u2026\u56e2\u7701\u59d4\u4e66\u8bb0\u5f20\u6d9b\u80af\u5b9a<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u793e\u56e2\u5de5\u4f5c \u9f13\u52b1\u2026<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u88ab\u8bbe\u4e3a\u5168\u56fd\u79d1\u6280\u5de5\u4f5c...\u65b0\u534e\u7f51\u592e\u89c6\u7f51\u9f50\u9c81\u7f51<b class="match term0">\u9752\u5c9b</b>\u5927\u4f17\u7f51<b class="match term0">\u9752\u5c9b</b>\u7535\u89c6\u53f0<b class="match term0">\u9752\u5c9b</b>\u65b0\u95fb\u7f51\u6559\u80b2\u79d1\u7814\u7f51\u5c71\u4e1c\u519c\u5927\u65b0\u95fb\u804a\u57ce', 'title': u'\u9752\u5c9b\u519c\u5927\u5728\u7ebf \u9752\u5c9b\u519c\u4e1a\u5927\u5b66\u65b0\u95fb\u7f51 News.qau.edu.cn'}, {'url': u'http://news.qau.edu.cn/', 'content': u'\u9752\u5e74\u548c\u4ed6\u4eec\u7684\u65b0\u5a92\u4f53\u5de5\u4f5c\u5ba4\u6728\u6709\u624b\u673a\u7684\u65e5\u5b50\u2014\u2014<b class="match term0">\u9752\u5c9b</b>\u519c\u5927Solomo\u65b0\u5a92\u4f53\u2026<b class="match term0">\u9752\u5c9b</b>\u7535\u89c6\u53f0\uff1a\u201c\u519c\u201d\u5b57\u53f7\u5927\u5b66\u91cc\u7684\u52a8\u753b\u660e\u661f\u2026<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u6d3e\u9a7b\u5c71\u4ead\u533a\u5f90\u5e84\u9547\u7b2c\u4e00\u4e66\u8bb0...\u63d0\u51fa\u4e09\u70b9\u8981\u6c42[\u5168\u6587]\u6770\u51fa\u6821\u53cb\u683e\u5347\u56de\u6bcd\u6821<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u8bbf\u95ee\u5e76\u505a\u5b66\u672f\u62a5\u544a<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u5927\u5b66\u751f\u673a\u7535\u4ea7\u54c1\u521b\u65b0...\u65b0\u534e\u7f51\u592e\u89c6\u7f51\u9f50\u9c81\u7f51<b class="match term0">\u9752\u5c9b</b>\u5927\u4f17\u7f51<b class="match term0">\u9752\u5c9b</b>\u7535\u89c6\u53f0<b class="match term0">\u9752\u5c9b</b>\u65b0\u95fb\u7f51\u6559\u80b2\u79d1\u7814\u7f51\u5c71\u4e1c\u519c\u5927\u65b0\u95fb\u804a\u57ce', 'title': u'\u9752\u5c9b\u519c\u5927\u5728\u7ebf \u9752\u5c9b\u519c\u4e1a\u5927\u5b66\u65b0\u95fb\u7f51 News.qau.edu.cn'}, {'url': u'http://io.qau.edu.cn', 'content': u'\u54c8\u5c14\u7279\u82f1\u6587\u6388\u8bfe\u7855\u58eb\u9879\u76ee\u6982\u51b502-26<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u5b66\u751f\u540e\u7eed\u51fa\u56fd\u7533\u8bf7...12-06<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u5916\u56fd\u4e13\u5bb6...\u8bbf\u5b66\u7533\u8bf7\u886807-13<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u5b66\u9662\u5916\u4e8b\u9662\u9886\u5bfc\u53ca', 'title': u'\u9752\u5c9b\u519c\u4e1a\u5927\u5b66\u56fd\u9645\u5408\u4f5c\u4ea4\u6d41\u5904_\u56fd\u9645\u6559\u80b2\u5b66\u9662'}, {'url': u'http://news.qau.edu.cn/n21075c1.aspx', 'content': u'\u4e2d\u56fd\u519c\u5927\u502a\u4e2d\u798f\u6559\u6388\u53d7\u8058<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u5ba2\u5ea7\u6559\u6388<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u7b2c\u5341\u5c4a\u5927\u5b66...<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u7b2c37\u5c4a\u7530\u5f84\u8fd0\u52a8\u4f1a\u7cbe\u5f69\u56fe\u72471347<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6821\u56ed\u98ce\u666f559\u4e1c\u8425...\u4f5c\u54c1\u5c55\uff08\u4e00\uff09252\u897f\u5357\u79d1\u6280\u5927\u5b66\u4e13\u5bb6\u6559\u6388\u6765<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u8c03\u7814250<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6210\u7acb\u5168\u56fd\u9996\u4e2a\u5927\u5b66', 'title': u'\u9752\u5c9b\u519c\u5927\u8363\u83b7\u534e\u4e1c\u519c\u4e1a\u9662\u6821\u7530\u5f84\u8fd0\u52a8\u4f1a\u7532\u7ec4\u7b2c\u4e00'}, {'url': u'http://news.qau.edu.cn/n388c8.aspx', 'content': u'\u7ba1\u7406\u3001\u7a3f\u4ef6\u53d1\u5e03\u3001\u7ea0\u9519\u4e3e\u62a5\uff09\u7a3f\u4ef6\u5efa\u8bae\uff1a\u5730\u5740\uff1a<b class="match term0">\u9752\u5c9b</b>\u5e02\u57ce\u9633\u533a\u957f\u57ce\u8def700\u53f7<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u515a\u59d4\u5ba3\u4f20\u90e8\u3000\u90ae\u653f...\u8fd4\u56de\u9876\u90e8 ]\u65b0\u6d6a\u5fae\u535a\u767b\u5f55\u6309\u94ae\u6700\u65b0\u56fe\u7247<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6982\u51b5<b class="match term0">\u9752\u5c9b</b>\u5e02\u57ce\u5e02\u73af\u5883\u7a7a\u6c14\u8d28\u91cf\u60c5...\u4f5c\u54c1\u5c55\uff08\u4e00\uff09252\u897f\u5357\u79d1\u6280\u5927\u5b66\u4e13\u5bb6\u6559\u6388\u6765<b class="match term0">\u9752\u5c9b</b>\u519c\u5927\u8c03\u7814250<b class="match term0">\u9752\u5c9b</b>\u519c\u4e1a\u5927\u5b66\u6210\u7acb\u5168\u56fd\u9996\u4e2a\u5927\u5b66', 'title': u'\u672c\u7f51\u8054\u7cfb\u65b9\u5f0f'}]
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 09:59:42] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:01:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:01:57] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 1.33564591408 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:02:04] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:05:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:05:57] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 1.29917216301 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:06:04] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:06:48] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:07:04] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:07:32] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:08:32] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:09:04] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:10:43] "GET / HTTP/1.1" 200 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 1.32766699791 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:10:52] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:9
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:11:26] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:9
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:11:49] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:9
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:12:07] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 1.37910294533 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:9
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:15:02] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:15:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:15:06] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:15:12] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:15:30] "GET /search/?q=%E5%8E%BB&page=1 HTTP/1.1" 404 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:17:25] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:10
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:19:43] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:23:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:23:06] "GET /static/style.css HTTP/1.1" 304 -
+DEBUG:jieba:Building Trie..., from /usr/local/lib/python2.7/dist-packages/jieba/dict.txt
+DEBUG:jieba:loading model from cache /tmp/jieba.cache
+DEBUG:jieba:loading model cost 1.44302988052 seconds.
+DEBUG:jieba:Trie has been built succesfully.
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:246
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:23:27] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:9
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:23:44] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:38
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:24:00] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:32
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:24:23] "POST /result HTTP/1.1" 200 -
+DEBUG:STATISTIC:##########
+DEBUG:STATISTIC:32
+INFO:werkzeug:192.168.44.1 - - [02/May/2014 10:26:51] "POST /result HTTP/1.1" 200 -

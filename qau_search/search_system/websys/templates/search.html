@@ -1,0 +1,16 @@
+<!doctype html>
+<title> qau_search </title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<body>
+	<form action="{{ url_for("search") }}" method=post>
+		<div class="tb">
+			<p id="logo">  李同的搜索系统</p>
+			<span>
+				<input type="text" name="baidu" id="baidu", class="baidu">
+			</span>
+			<span>
+				<input type="submit", value="哈哈一下", id="su-baidu", class="submit">
+			</span>
+		</div>
+	</form>
+</body>

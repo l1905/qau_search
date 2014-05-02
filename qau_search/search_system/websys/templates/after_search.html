@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+    <title>{% block title %}Result{% endblock %}</title>
+    
+</head>
+
+<body>
+
+<h1>Result</h1>
+<p>查询的内容: <font color="red">{{ query }}</font><br>
+发现<font color="red">{{ count }}</font>条符合条件的内容，
+第<font color="red">{{ page }}</font>页,共<font color="red">{{ total_page  }}</font>页,
+用时<font color="red">{{ time }}</font>秒
+{% if results %}
+    {% for res in results %}
+    <li><b> <a href={{ res.url }}>{% autoescape off %} {{ res.title }} {% endautoescape %} </a></b></li>
+        {{ res.url }}<br/>
+        {% autoescape off %} 
+            {{ res.content }}
+        {% endautoescape %}
+    {% endfor %}
+{% else %}
+     <p>No contents found.
+{% endif %}
+
+<!-- <br/><br/><br/><a href=http://{{ host  }}:{{ port  }}/search/?q={{ query }}&page={{ nextpage }}>下一页</a> -->
+</body>
+</html>
